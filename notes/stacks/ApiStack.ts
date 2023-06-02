@@ -12,6 +12,7 @@ export function ApiStack({ stack, app }: StackContext) {
     },
     routes: {
       "POST /notes": "packages/functions/src/create.main",
+      "GET /notes/{id}": "packages/functions/src/get.main",
     },
   });
 
